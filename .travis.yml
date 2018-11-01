@@ -15,7 +15,9 @@ matrix:
       addons: {apt: {packages: [libgmp-dev]}}
     - env: ARGS="--resolver lts-11"
       addons: {apt: {packages: [libgmp-dev]}}
-    - env: ARGS="--resolver nightly-2018-06-27"
+    - env: ARGS="--resolver lts-12"
+      addons: {apt: {packages: [libgmp-dev]}}
+    - env: ARGS="--resolver nightly-2018-11-01"
       addons: {apt: {packages: [libgmp-dev]}}
 
     # Broken on newer OS Xs
@@ -31,7 +33,9 @@ matrix:
       os: osx
     - env: ARGS="--resolver lts-11"
       os: osx
-    - env: ARGS="--resolver nightly-2018-06-27"
+    - env: ARGS="--resolver lts-12"
+      os: osx
+    - env: ARGS="--resolver nightly-2018-11-01"
       os: osx
 
 before_install:
